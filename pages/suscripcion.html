@@ -2,123 +2,157 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cofi - Café de Especialidad</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Suscribite al #CofiClub y recibí café de especialidad en tu casa cada mes.">
+    <title>Suscripción - Cofi</title>
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 
-<body class="body">
-
-    <header class="header">
-        <div class="header__top-bar">
-            <div class="container">
-                <p class="header__promo-text">10% OFF TRANSFERENCIA | ENVÍOS A TODO EL PAÍS</p>
+<body class="d-flex flex-column gap-5">
+    <!-- HEADER -->
+    <header>
+        <!-- TOP -->
+        <div class="top bg-black">
+            <div class="container text-center py-3">
+                <p class="text-white m-0">10% OFF TRANSFERENCIA | ENVÍOS A TODO EL PAÍS</p>
             </div>
         </div>
 
-        <nav class="nav">
-            <div class="container nav__container">
-                <a class="nav__logo" href="../index.html">Cofi.</a>
+        <!-- NAV -->
+        <nav class="navbar navbar-expand-lg py-4">
+            <div class="container">
+                <a class="navbar-brand text-black fs-2 fw-bolder" href="../index.html">Cofi.</a>
 
-                <ul class="nav__links">
-                    <li><a class="nav__link" href="../index.html">Inicio</a></li>
-                    <li><a class="nav__link nav__link--bold" href="#">#CofiClub</a></li>
-                    <li><a class="nav__link" href="./productos.html">Productos</a></li>
-                    <li><a class="nav__link" href="./mayoristas.html">Mayoristas</a></li>
-                    <li><a class="nav__link" href="./contacto.html">Contacto</a></li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCofi"
+                    aria-controls="navbarCofi" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <div class="nav__icons">
-                    <a href="#"><img src="../assets/icons/search.svg" alt="Buscar"></a>
-                    <a href="#"><img src="../assets/icons/user.svg" alt="Usuario"></a>
-                    <a href="#"><img src="../assets/icons/bag-shopping.svg" alt="Carrito de compras"></a>
+                <div class="collapse navbar-collapse" id="navbarCofi">
+                    <ul class="navbar-nav gap-4 mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link text-black fw-medium" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-black fw-bolder" href="#">#CofiClub</a></li>
+                        <li class="nav-item"><a class="nav-link text-black fw-medium"
+                                href="./productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link text-black fw-medium"
+                                href="./mayoristas.html">Mayoristas</a></li>
+                        <li class="nav-item"><a class="nav-link text-black fw-medium"
+                                href="./contacto.html">Contacto</a></li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-4">
+                        <a href="#" aria-label="Buscar productos"><img src="../assets/icons/search.svg" alt="Buscar"
+                                height="24" /></a>
+                        <a href="#" aria-label="Ver perfil de usuario"><img src="../assets/icons/user.svg" alt="Usuario"
+                                height="24" /></a>
+                        <a href="#" aria-label="Ver carrito de compras"><img src="../assets/icons/bag-shopping.svg"
+                                alt="Carrito de compras" height="24" /></a>
+                    </div>
                 </div>
             </div>
         </nav>
 
-        <section class="subscription-banner">
-            <div class="container">
-                <h3 class="subscription-banner__text subscription-banner__text--primary">¡No te vuelvas a quedar sin
-                    café!</h3>
-                <h3 class="subscription-banner__text subscription-banner__text--secondary">Sumate a
-                    <span>#CofiClub</span>
-                </h3>
+        <!-- SUSCRIPCIÓN BANNER -->
+        <section class="subscription-banner container-fluid">
+            <div class="container text-white">
+                <h3 class="subscription-banner__text fw-semibold fs-2 fs-md-4">¡No te vuelvas a quedar sin café!</h3>
+                <h3 class="subscription-banner__text fw-normal">Sumate a <span class="fw-bold">#CofiClub</span></h3>
             </div>
         </section>
-
     </header>
 
+    <!-- MAIN -->
     <main class="main">
-        <section class="highlighted-products">
+        <section class="highlighted-products py-4">
             <div class="container">
+                <h1 class="highlighted-products__title text-center fs-4 fw-bold mb-5">Suscripción #CofiClub</h1>
+                <div class="row align-items-center gy-5">
 
-                <div class="highlighted-products__grid-suscription">
+                    <!-- Imagen del producto -->
+                    <div class="col-md-6">
+                        <article class="product">
+                            <img class="img-fluid" src="../assets/images/producto.jpg"
+                                alt="Bolsa de café Cofi Reserva de 500g" />
+                        </article>
+                    </div>
 
-                    <!-- Producto destacado -->
-                    <article class="product">
-                        <img class="product__image" src="../assets/images/producto.jpg" alt="Café Cofi Reserva">
-                    </article>
+                    <!-- Detalles de la suscripción -->
+                    <div class="col-md-6">
+                        <article class="subscription">
 
-                    <!-- Suscripción #CofiClub -->
-                    <article class="subscription">
+                            <!-- Estrellas -->
+                            <div class="stars d-flex gap-2 mb-3">
+                                <img src="../assets/icons/star.svg" alt="Estrella" height="24" />
+                                <img src="../assets/icons/star.svg" alt="Estrella" height="24" />
+                                <img src="../assets/icons/star.svg" alt="Estrella" height="24" />
+                                <img src="../assets/icons/star.svg" alt="Estrella" height="24" />
+                                <img src="../assets/icons/star.svg" alt="Estrella" height="24" />
+                            </div>
 
-                        <h1 class="highlighted-products__title">Suscripción #CofiClub</h1>
+                            <!-- Precio -->
+                            <p class="price mb-3 fs-4 fw-bold">$18.000</p>
 
-                        <!-- Estrellas -->
-                        <div class="stars">
-                            <img src="../assets/icons/star.svg" alt="Estrella">
-                            <img src="../assets/icons/star.svg" alt="Estrella">
-                            <img src="../assets/icons/star.svg" alt="Estrella">
-                            <img src="../assets/icons/star.svg" alt="Estrella">
-                            <img src="../assets/icons/star.svg" alt="Estrella">
-                        </div>
+                            <!-- Gramos -->
+                            <p>Gramos</p>
+                            <div class="btn-group d-flex mb-3" role="group" aria-label="Seleccionar cantidad de gramos">
+                                <button class="btn btn-outline-primary flex-fill" data-value="250gr">250gr</button>
+                                <button class="btn btn-outline-primary flex-fill" data-value="500gr">500gr</button>
+                                <button class="btn btn-outline-primary flex-fill" data-value="1000gr">1000gr</button>
+                                <button class="btn btn-outline-primary flex-fill" data-value="2000gr">2000gr</button>
+                            </div>
 
-                        <!-- Precio -->
-                        <p class="price">$18.000</p>
+                            <!-- Tipo de Molienda -->
+                            <p>Tipo de Molienda</p>
+                            <div class="btn-group d-flex flex-wrap mb-3" role="group"
+                                aria-label="Seleccionar tipo de molienda">
+                                <button class="btn btn-outline-primary flex-fill" data-value="whole-bean">En
+                                    grano</button>
+                                <button class="btn btn-outline-primary flex-fill"
+                                    data-value="italian-coffee-maker">Cafetera Italiana</button>
+                                <button class="btn btn-outline-primary flex-fill" data-value="french-press">Cafetera
+                                    Francesa</button>
+                                <button class="btn btn-outline-primary flex-fill"
+                                    data-value="filtered">Filtrado</button>
+                                <button class="btn btn-outline-primary flex-fill"
+                                    data-value="espresso">Espresso</button>
+                            </div>
 
-                        <!-- Gramos -->
-                        <p>Gramos</p>
-                        <div class="options">
-                            <button class="option-button" data-value="250gr">250gr</button>
-                            <button class="option-button" data-value="500gr">500gr</button>
-                            <button class="option-button" data-value="1000gr">1000gr</button>
-                            <button class="option-button" data-value="2000gr">2000gr</button>
-                        </div>
+                            <!-- Frecuencia -->
+                            <p>Frecuencia</p>
+                            <div class="btn-group d-flex mb-3" role="group" aria-label="Seleccionar frecuencia">
+                                <button class="btn btn-outline-primary flex-fill" data-value="monthly">Mensual</button>
+                                <button class="btn btn-outline-primary flex-fill" data-value="annually">Anual</button>
+                            </div>
 
-                        <!-- Tipo de Molienda -->
-                        <p>Tipo de Molienda</p>
-                        <div class="options">
-                            <button class="option-button" data-value="whole-bean">En grano</button>
-                            <button class="option-button" data-value="italian-coffee-maker">Cafetera Italiana</button>
-                            <button class="option-button" data-value="french-press">Cafetera Francesa</button>
-                            <button class="option-button" data-value="filtered">Filtrado</button>
-                            <button class="option-button" data-value="espresso">Espresso</button>
-                        </div>
-
-                        <!-- Frecuencia -->
-                        <p>Frecuencia</p>
-                        <div class="options">
-                            <button class="option-button" data-value="monthly">Mensual</button>
-                            <button class="option-button" data-value="annually">Anual</button>
-                        </div>
-
-                        <!-- Botón Agregar al Carrito -->
-                        <button class="add-to-cart">Agregar al Carrito</button>
-                    </article>
-
+                            <!-- Botón Agregar -->
+                            <button class="btn btn-primary w-100 mt-3"
+                                aria-label="Agregar suscripción al carrito">Agregar al Carrito</button>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <p class="footer__text">&copy; Cofi 2025. Todos los derechos reservados. | Desarrollado por @marianocejasdev
+    <!-- FOOTER -->
+    <footer class="top bg-black">
+        <div class="container text-center py-3">
+            <p class="text-white m-0">© Cofi 2025. Todos los derechos reservados. | Desarrollado por @marianocejasdev
             </p>
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

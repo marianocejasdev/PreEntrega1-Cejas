@@ -4,161 +4,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cofi - Café de Especialidad</title>
+    <title>Mayoristas - Cofi</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body class="body">
+<body class="d-flex flex-column gap-5">
 
-    <header class="header">
-        <div class="header__top-bar">
-            <div class="container">
-                <p class="header__promo-text">10% OFF TRANSFERENCIA | ENVÍOS A TODO EL PAÍS</p>
+    <!-- HEADER -->
+    <header>
+
+        <!-- TOP -->
+        <div class="top bg-black">
+            <div class="container text-center py-3">
+                <p class="text-white m-0">10% OFF TRANSFERENCIA | ENVÍOS A TODO EL PAÍS</p>
             </div>
         </div>
+        <!-- end of TOP -->
 
-        <nav class="nav">
-            <div class="container nav__container">
-                <a class="nav__logo" href="../index.html">Cofi.</a>
+        <!-- NAV -->
+        <nav class="navbar navbar-expand-lg py-4">
+            <div class="container">
+                <a class="navbar-brand text-black fs-2 fw-bolder" href="../index.html">Cofi.</a>
 
-                <ul class="nav__links">
-                    <li><a class="nav__link" href="../index.html">Inicio</a></li>
-                    <li><a class="nav__link nav__link--bold" href="./suscripcion.html">#CofiClub</a></li>
-                    <li><a class="nav__link" href="./productos.html">Productos</a></li>
-                    <li><a class="nav__link" href="#">Mayoristas</a></li>
-                    <li><a class="nav__link" href="./contacto.html">Contacto</a></li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCofi"
+                    aria-controls="navbarCofi" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <div class="nav__icons">
-                    <a href="#"><img src="../assets/icons/search.svg" alt="Buscar"></a>
-                    <a href="#"><img src="../assets/icons/user.svg" alt="Usuario"></a>
-                    <a href="#"><img src="../assets/icons/bag-shopping.svg" alt="Carrito de compras"></a>
+                <div class="collapse navbar-collapse" id="navbarCofi">
+                    <ul class="navbar-nav gap-4 mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-black fw-medium" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black fw-bolder active" href="./suscripcion.html"
+                                aria-current="page">#CofiClub</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black fw-medium" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black fw-medium" href="./mayoristas.html">Mayoristas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black fw-medium" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-4">
+                        <a href="#"><img src="../assets/icons/search.svg" alt="Buscar" height="24"></a>
+                        <a href="#"><img src="../assets/icons/user.svg" alt="Usuario" height="24"></a>
+                        <a href="#"><img src="../assets/icons/bag-shopping.svg" alt="Carrito de compras"
+                                height="24"></a>
+                    </div>
                 </div>
             </div>
         </nav>
+        <!-- end of NAV -->
 
-        <section class="subscription-banner">
-            <div class="container">
-                <h3 class="subscription-banner__text subscription-banner__text--primary">¡No te vuelvas a quedar sin
-                    café!</h3>
-                <h3 class="subscription-banner__text subscription-banner__text--secondary">Sumate a
-                    <span>#CofiClub</span>
+        <!-- SUSCRIPTION BANNER -->
+        <section class="subscription-banner container-fluid">
+            <div class="container text-white">
+                <h3 class="subscription-banner__text fw-semibold fs-2 fs-md-4">¡No te vuelvas a quedar sin café!</h3>
+                <h3 class=" subscription-banner__text fw-normal">Sumate a
+                    <span class="fw-bold">#CofiClub</span>
                 </h3>
             </div>
         </section>
+        <!-- end of SUSCRIPTION BANNER -->
 
     </header>
+    <!-- end of HEADER -->
 
     <main class="main">
         <section class="faq">
             <div class="container">
-                <h1 class="faq__title">Preguntas Frecuentes</h1>
+                <h1 class="faq__title fs-4 fw-bold mb-4 text-center">Preguntas Frecuentes</h1>
 
-                <div class="faq__list">
+                <div class="accordion" id="faqAccordion">
 
-                    <div class="faq__item">
-                        <button class="faq__question" aria-expanded="false">
-                            ¿Cómo me suscribo a #CofiClub?
-                        </button>
-                        <div class="faq__answer">
-                            <p>Para suscribirte a #CofiClub, simplemente haz clic en el botón "Suscríbete" en nuestra
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                ¿Cómo me suscribo a #CofiClub?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Para suscribirte a #CofiClub, simplemente haz clic en el botón "Suscríbete" en nuestra
                                 página de suscripción, elige el plan que más te guste y completa tu información de pago.
-                                ¡Así de fácil!</p>
+                                ¡Así de fácil!
+                            </div>
                         </div>
                     </div>
 
-                    <div class="faq__item">
-                        <button class="faq__question" aria-expanded="false">
-                            ¿Puedo elegir el tipo de café que recibo?
-                        </button>
-                        <div class="faq__answer">
-                            <p>Sí, ofrecemos diferentes tipos de café según tus preferencias. Puedes elegir entre grano
-                                entero, molido para cafetera italiana, cafetera francesa, filtrado y espresso.</p>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                ¿Puedo elegir el tipo de café que recibo?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Sí, ofrecemos diferentes tipos de café según tus preferencias. Puedes elegir entre grano
+                                entero, molido para cafetera italiana, cafetera francesa, filtrado y espresso.
+                            </div>
                         </div>
                     </div>
 
-                    <div class="faq__item">
-                        <button class="faq__question" aria-expanded="false">
-                            ¿Cada cuánto recibo mi café?
-                        </button>
-                        <div class="faq__answer">
-                            <p>Dependiendo del plan que elijas, puedes recibir tu café de forma mensual o anual. ¡Tú
-                                decides la frecuencia de tu suscripción!</p>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                ¿Cada cuánto recibo mi café?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Dependiendo del plan que elijas, puedes recibir tu café de forma mensual o anual. ¡Tú
+                                decides la frecuencia de tu suscripción!
+                            </div>
                         </div>
                     </div>
 
-                    <div class="faq__item">
-                        <button class="faq__question" aria-expanded="false">
-                            ¿Puedo cancelar o modificar mi suscripción?
-                        </button>
-                        <div class="faq__answer">
-                            <p>Sí, puedes cancelar o modificar tu suscripción en cualquier momento desde tu cuenta. No
-                                hay penalización por cancelación y puedes cambiar tu plan según tus necesidades.</p>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                ¿Puedo cancelar o modificar mi suscripción?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Sí, puedes cancelar o modificar tu suscripción en cualquier momento desde tu cuenta. No
+                                hay penalización por cancelación y puedes cambiar tu plan según tus necesidades.
+                            </div>
                         </div>
                     </div>
 
-                    <div class="faq__item">
-                        <button class="faq__question" aria-expanded="false">
-                            ¿Puedo elegir la cantidad de café que recibo cada mes?
-                        </button>
-                        <div class="faq__answer">
-                            <p>Sí, puedes elegir entre diferentes cantidades: 250gr, 500gr, 1000gr, y 2000gr. Escoge la
-                                cantidad que se ajuste a tus necesidades y nosotros nos encargamos del resto.</p>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                ¿Puedo elegir la cantidad de café que recibo cada mes?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="faqFive"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Sí, puedes elegir entre diferentes cantidades: 250gr, 500gr, 1000gr, y 2000gr. Escoge la
+                                cantidad que se ajuste a tus necesidades y nosotros nos encargamos del resto.
+                            </div>
                         </div>
                     </div>
 
-                    <div class="faq__item">
-                        <button class="faq__question" aria-expanded="false">
-                            ¿Qué pasa si no estoy en casa cuando llegue mi pedido?
-                        </button>
-                        <div class="faq__answer">
-                            <p>Si no estás en casa, el servicio de entrega intentará realizar una nueva entrega en un
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                ¿Qué pasa si no estoy en casa cuando llegue mi pedido?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="faqSix"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Si no estás en casa, el servicio de entrega intentará realizar una nueva entrega en un
                                 horario conveniente o te dejarán una notificación para que puedas recoger tu paquete en
-                                un punto de entrega cercano.</p>
+                                un punto de entrega cercano.
+                            </div>
                         </div>
                     </div>
 
-                    <div class="faq__item">
-                        <button class="faq__question" aria-expanded="false">
-                            ¿Puedo cambiar mi plan después de suscribirme?
-                        </button>
-                        <div class="faq__answer">
-                            <p>Sí, puedes cambiar tu plan de suscripción en cualquier momento. Accede a tu cuenta y
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                ¿Puedo cambiar mi plan después de suscribirme?
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="faqSeven"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Sí, puedes cambiar tu plan de suscripción en cualquier momento. Accede a tu cuenta y
                                 selecciona el plan que más se ajuste a tus necesidades. ¡Nos aseguramos de que siempre
-                                estés satisfecho!</p>
+                                estés satisfecho!
+                            </div>
                         </div>
                     </div>
 
-                    <div class="faq__item">
-                        <button class="faq__question" aria-expanded="false">
-                            ¿Cuánto cuesta el envío?
-                        </button>
-                        <div class="faq__answer">
-                            <p>El costo del envío varía según la ubicación. Sin embargo, ofrecemos envíos gratuitos en
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                ¿Cuánto cuesta el envío?
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="faqEight"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                El costo del envío varía según la ubicación. Sin embargo, ofrecemos envíos gratuitos en
                                 ciertas promociones. Puedes consultar los detalles de envío en nuestra página de
-                                checkout antes de completar la compra.</p>
+                                checkout antes de completar la compra.
+                            </div>
                         </div>
                     </div>
 
-                    <div class="faq__item">
-                        <button class="faq__question" aria-expanded="false">
-                            ¿Qué hago si tengo algún problema con mi pedido?
-                        </button>
-                        <div class="faq__answer">
-                            <p>Si tienes algún problema con tu pedido, por favor contacta con nuestro servicio de
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqNine">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                ¿Qué hago si tengo algún problema con mi pedido?
+                            </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="faqNine"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Si tienes algún problema con tu pedido, por favor contacta con nuestro servicio de
                                 atención al cliente. Estamos disponibles para ayudarte con cualquier inconveniente y
-                                asegurarnos de que recibas tu café sin problemas.</p>
+                                asegurarnos de que recibas tu café sin problemas.
+                            </div>
                         </div>
                     </div>
 
-                    <div class="faq__item">
-                        <button class="faq__question" aria-expanded="false">
-                            ¿Puedo regalar una suscripción a #CofiClub?
-                        </button>
-                        <div class="faq__answer">
-                            <p>Sí, puedes regalar una suscripción a #CofiClub. Visita nuestra página de regalos y
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqTen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                ¿Puedo regalar una suscripción a #CofiClub?
+                            </button>
+                        </h2>
+                        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="faqTen"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Sí, puedes regalar una suscripción a #CofiClub. Visita nuestra página de regalos y
                                 selecciona el plan de suscripción que desees regalar. ¡El regalo perfecto para los
-                                amantes del café!</p>
+                                amantes del café!
+                            </div>
                         </div>
                     </div>
 
@@ -167,13 +258,20 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <p class="footer__text">&copy; Cofi 2025. Todos los derechos reservados. | Desarrollado por
-                @marianocejasdev
+
+    <!-- FOOTER -->
+    <footer class="top bg-black">
+        <div class="container text-center py-3">
+            <p class="text-white m-0">© Cofi 2025. Todos los derechos reservados. | Desarrollado por @marianocejasdev
             </p>
         </div>
     </footer>
+    <!-- end of FOOTER -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
 
 </body>
 
