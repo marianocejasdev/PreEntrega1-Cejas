@@ -1,13 +1,13 @@
 // index.scss
 
 // 1. Abstracts
-@import 'abstracts/variables';
+@use 'abstracts/variables';
 
 // 2. Base
-@import 'base/fonts';
-@import 'base/reset';
+@use 'base/fonts';
+@use 'base/reset';
 
 // 3. Layout
-@import 'layout/header';
-@import 'layout/main';
-@import 'layout/subscription-banner';
+@use 'layout/header';
+@use 'layout/main';
+@use 'layout/subscription-banner';

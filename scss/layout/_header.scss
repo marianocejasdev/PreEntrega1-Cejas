@@ -1,13 +1,14 @@
 // layout/_header.scss
+@use '../abstracts/variables';
 
 // TOP
 .top p {
-    font-family: $font-secondary;
+    font-family: variables.$font-secondary;
 }
 
 // NAV
 .nav-link.fw-medium {
-    font-family: $font-secondary;
+    font-family: variables.$font-secondary;
 }
 
 .nav__icons {
