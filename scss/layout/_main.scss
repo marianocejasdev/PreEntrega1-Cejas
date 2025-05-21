@@ -1,0 +1,38 @@
+// layout/_main.scss
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 0;
+
+    &__name {
+        color: $color-black;
+        font-family: $font-primary;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+
+    &__price {
+        color: $color-black;
+        font-family: $font-primary;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+
+    &__button {
+        background-color: $color-black;
+        font-family: $font-secondary;
+        font-size: 1rem;
+        color: $color-white;
+        border: none;
+        border-radius: 999px;
+        padding-block: 0.5rem;
+        padding-inline: 2rem;
+        margin-bottom: 0;
+    }
+}

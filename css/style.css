@@ -1,148 +1,114 @@
-/* FONTS */
-
 @font-face {
-    font-family: 'Fraunces';
-    src: url('../assets/fonts/Fraunces/Fraunces.ttf') format('truetype');
-    font-display: swap;
+  font-family: "Fraunces";
+  src: url("../assets/fonts/Fraunces/Fraunces.ttf") format("truetype");
+  font-display: swap;
 }
-
 @font-face {
-    font-family: 'Poppins';
-    src: url('../assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
-    font-display: swap;
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-display: swap;
 }
-
-/* VARIABLES */
-
-:root {
-    --font: 'Fraunces';
-    --font-secondary: 'Poppins';
-}
-
-/* RESETS & GLOBAL STYLES */
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fraunces";
 }
 
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 body {
-    background-color: #ECE2D6;
+  background-color: #ECE2D6;
 }
 
-/* HEADER */
-
-/* TOP */
 .top p {
-    font-family: var(--font-secondary);
+  font-family: "Poppins";
 }
 
-/* end of TOP */
-
-/* NAV */
 .nav-link.fw-medium {
-    font-family: var(--font-secondary);
+  font-family: "Poppins";
 }
 
 .nav__icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
 
 .nav__icons img {
-    height: 24px;
+  height: 24px;
 }
 
-/* end of NAV */
-
-/* BANNER */
 .banner-video {
-    padding: 0;
-    width: 100vw;
-    height: 360px;
-    overflow: hidden;
+  padding: 0;
+  width: 100vw;
+  height: 360px;
+  overflow: hidden;
 }
-
 .banner-video video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-/* end of BANNER */
-
-/* end of HEADER */
-
-/* MAIN */
 .product {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 0;
 }
-
 .product__name {
-    color: #000;
-    font-family: var(--font);
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 0;
+  color: #000;
+  font-family: "Fraunces";
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
 }
-
 .product__price {
-    color: #000;
-    font-family: var(--font);
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 0;
+  color: #000;
+  font-family: "Fraunces";
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0;
 }
-
 .product__button {
-    background-color: #000;
-    font-family: var(--font-secondary);
-    font-size: 1rem;
-    color: #FFF;
-    border: none;
-    border-radius: 999px;
-    padding-block: .5rem;
-    padding-inline: 2rem;
-    margin-bottom: 0;
+  background-color: #000;
+  font-family: "Poppins";
+  font-size: 1rem;
+  color: #FFF;
+  border: none;
+  border-radius: 999px;
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
+  margin-bottom: 0;
 }
 
-/* end of MAIN */
-
-/* SUBSCRIPTION BANNER */
 .subscription-banner {
-    padding-block: 2rem;
-    background-image: url('../assets/images/banner.jpg');
-    background-size: cover;
-    background-position: center;
+  padding-block: 2rem;
+  background-image: url("../assets/images/banner.jpg");
+  background-size: cover;
+  background-position: center;
 }
-
 .subscription-banner .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.subscription-banner__text {
+  font-family: "Fraunces";
+  font-size: 2rem;
 }
 
-.subscription-banner__text {
-    font-family: var(--font);
-    font-size: 2rem;
-}
+/*# sourceMappingURL=style.css.map */

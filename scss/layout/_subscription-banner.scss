@@ -1,0 +1,21 @@
+// layout/_subscription-banner.scss
+
+.subscription-banner {
+    padding-block: 2rem;
+    background-image: url('../assets/images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    &__text {
+        font-family: $font-primary;
+        font-size: 2rem;
+    }
+}
