@@ -1,12 +1,12 @@
 const productos = [
-  { nombre: "Cofi Reserva", precio: "$20.000", img: "./assets/images/producto.jpg", alt: "Café Cofi Reserva" },
-  { nombre: "Cofi Clásico", precio: "$18.500", img: "./assets/images/producto.jpg", alt: "Café Cofi Clásico" },
-  { nombre: "Cofi Intenso", precio: "$21.000", img: "./assets/images/producto.jpg", alt: "Café Cofi Intenso" },
-  { nombre: "Cofi Orgánico", precio: "$22.000", img: "./assets/images/producto.jpg", alt: "Café Cofi Orgánico" },
-  { nombre: "Cofi Reserva", precio: "$20.000", img: "./assets/images/producto.jpg", alt: "Café Cofi Reserva" },
-  { nombre: "Cofi Clásico", precio: "$18.500", img: "./assets/images/producto.jpg", alt: "Café Cofi Clásico" },
-  { nombre: "Cofi Intenso", precio: "$21.000", img: "./assets/images/producto.jpg", alt: "Café Cofi Intenso" },
-  { nombre: "Cofi Orgánico", precio: "$22.000", img: "./assets/images/producto.jpg", alt: "Café Cofi Orgánico" }
+  { nombre: "Cofi Reserva", precio: "$20.000", img: "../assets/images/producto.jpg", alt: "Café Cofi Reserva" },
+  { nombre: "Cofi Clásico", precio: "$18.500", img: "../assets/images/producto.jpg", alt: "Café Cofi Clásico" },
+  { nombre: "Cofi Intenso", precio: "$21.000", img: "../assets/images/producto.jpg", alt: "Café Cofi Intenso" },
+  { nombre: "Cofi Orgánico", precio: "$22.000", img: "../assets/images/producto.jpg", alt: "Café Cofi Orgánico" },
+  { nombre: "Cofi Reserva", precio: "$20.000", img: "../assets/images/producto.jpg", alt: "Café Cofi Reserva" },
+  { nombre: "Cofi Clásico", precio: "$18.500", img: "../assets/images/producto.jpg", alt: "Café Cofi Clásico" },
+  { nombre: "Cofi Intenso", precio: "$21.000", img: "../assets/images/producto.jpg", alt: "Café Cofi Intenso" },
+  { nombre: "Cofi Orgánico", precio: "$22.000", img: "../assets/images/producto.jpg", alt: "Café Cofi Orgánico" }
 ];
 
 const productList = document.getElementById('product-list');
