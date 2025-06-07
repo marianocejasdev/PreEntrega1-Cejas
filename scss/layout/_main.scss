@@ -1,6 +1,12 @@
 // layout/_main.scss
 @use '../abstracts/variables';
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
 .product {
     display: flex;
     flex-direction: column;

@@ -2,162 +2,306 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto - Cofi</title>
-    <!-- Bootstrap CDN -->
+    <link rel="icon" href="../assets/icons/favicon.ico" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body class="d-flex flex-column gap-5">
 
     <!-- HEADER -->
-    <header>
-
-        <!-- TOP -->
-        <div class="top bg-black">
+    <header role="banner">
+        <section class="header__top bg-black" role="region" aria-label="Promoción principal">
             <div class="container text-center py-3">
-                <p class="text-white m-0">10% OFF TRANSFERENCIA | ENVÍOS A TODO EL PAÍS</p>
+                <p class="header__top-text text-white m-0">10% OFF TRANSFERENCIA | ENVÍOS A TODO EL PAÍS</p>
             </div>
-        </div>
-        <!-- end of TOP -->
+        </section>
 
-        <!-- NAV -->
-        <nav class="navbar navbar-expand-lg py-4">
+        <nav class="navbar navbar-expand-lg py-4" role="navigation" aria-label="Menú principal">
             <div class="container">
-                <a class="navbar-brand text-black fs-2 fw-bolder" href="../index.html">Cofi.</a>
-
+                <h1 class="m-0">
+                    <a href="../index.html" class="navbar-brand text-black fs-2 fw-bolder">Cofi.</a>
+                </h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCofi"
-                    aria-controls="navbarCofi" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarCofi" aria-expanded="false" aria-label="Abrir menú principal">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarCofi">
                     <ul class="navbar-nav gap-4 mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link text-black fw-medium" href="../index.html">Inicio</a>
+                        <li class="nav-item"><a class="nav-link text-black fw-medium" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-black fw-bolder" href="./suscripcion.html">#CofiClub</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-black fw-medium" href="./productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-black fw-medium" href="./mayoristas.html">Mayoristas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-black fw-medium" href="#">Contacto</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link text-black fw-bolder"
+                                href="./suscripcion.html">#CofiClub</a></li>
+                        <li class="nav-item"><a class="nav-link text-black fw-medium"
+                                href="./productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link text-black fw-medium"
+                                href="./mayoristas.html">Mayoristas</a></li>
+                        <li class="nav-item"><a class="nav-link text-black fw-medium" href="#">Contacto</a></li>
                     </ul>
-
                     <div class="d-flex align-items-center gap-4">
-                        <a href="#"><img src="../assets/icons/search.svg" alt="Buscar" height="24"></a>
-                        <a href="#"><img src="../assets/icons/user.svg" alt="Usuario" height="24"></a>
-                        <a href="#"><img src="../assets/icons/bag-shopping.svg" alt="Carrito de compras"
-                                height="24"></a>
+                        <a href="#" aria-label="Buscar productos"><img src="../assets/icons/search.svg" alt=""
+                                aria-hidden="true" height="24" /></a>
+                        <a href="#" aria-label="Ver perfil de usuario"><img src="../assets/icons/user.svg" alt=""
+                                aria-hidden="true" height="24" /></a>
+                        <a href="#" aria-label="Ver carrito de compras"><img src="../assets/icons/bag-shopping.svg"
+                                alt="" aria-hidden="true" height="24" /></a>
                     </div>
                 </div>
             </div>
         </nav>
-        <!-- end of NAV -->
 
-        <!-- SUSCRIPTION BANNER -->
         <section class="subscription-banner container-fluid">
             <div class="container text-white">
-                <h3 class="subscription-banner__text fw-semibold fs-2 fs-md-4">¡No te vuelvas a quedar sin café!</h3>
-                <h3 class="subscription-banner__text fw-normal">Sumate a
-                    <span class="fw-bold">#CofiClub</span>
-                </h3>
+                <h2 class="subscription-banner__text fw-semibold fs-2 fs-md-4">¡No te vuelvas a quedar sin café!</h2>
+                <h3 class="subscription-banner__text fw-normal">Sumate a <span class="fw-bold">#CofiClub</span></h3>
             </div>
         </section>
-        <!-- end of SUSCRIPTION BANNER -->
-
     </header>
-    <!-- end of HEADER -->
 
-    <main class="main">
-        <section class="highlighted-products">
+    <!-- MAIN -->
+    <main role="main" id="main-content" class="d-flex flex-column gap-5">
+        <section class="contacto py-4">
             <div class="container">
-                <div class="highlighted-products__grid-suscription row">
-
-                    <!-- Información mayorista -->
-                    <article class="wholesale-info col-md-6 mb-4">
-                        <h1 class="highlighted-products__title fs-4 fw-bold">¿Tenés un local y querés vender nuestro
-                            café?</h1>
-                        <p>¡Ofrecé el mejor café de especialidad a tus clientes!</p>
-                        <p>Si tenés un café, restaurante o local y querés ofrecer el delicioso sabor de nuestros cafés
-                            de especialidad, ¡estamos para ayudarte!</p>
-                        <h2 class="fs-4 fw-bold">Crea tu cuenta mayorista en 3 simples pasos:</h2>
-                        <ol>
-                            <li>Completá tus datos y creá tu cuenta mayorista.</li>
-                            <li>Iniciá sesión en nuestra página web.</li>
-                            <li>¡Listo! Ya tendrás acceso a tu cuenta de distribuidor, con beneficios y precios
-                                exclusivos para compras mayoristas.</li>
-                        </ol>
-                    </article>
+                <div class="row gy-5 align-items-center">
+                    <!-- Texto de contacto -->
+                    <div class="col-md-6">
+                        <article class="contacto__content">
+                            <h2 class="contacto__title fs-4 fw-bold">
+                                ¿Querés contactarnos? ¡Estamos para ayudarte!
+                            </h2>
+                            <p class="contacto__paragraph">
+                                Ya sea que tengas una consulta sobre nuestros cafés, tu pedido, o te interese ofrecer
+                                nuestro café en tu
+                                local, completá el formulario y te vamos a responder lo antes posible.
+                            </p>
+                            <p class="contacto__paragraph">
+                                Nos encanta acompañarte en cada paso y compartir la pasión por el buen café.
+                            </p>
+                            <p class="contacto__paragraph">
+                                ¡Escribinos y hablamos!
+                            </p>
+                        </article>
+                    </div>
 
                     <!-- Formulario de contacto -->
-                    <article class="subscription col-md-6">
-                        <h1 class="highlighted-products__title fs-4 fw-bold">Formulario de Contacto</h1>
+                    <div class="col-md-6">
+                        <article class="contacto__form-container">
+                            <form action="#" method="POST" class="contacto__form">
+                                <div class="contacto__form-group mb-3">
+                                    <label for="name" class="contacto__label">Nombre Completo *</label>
+                                    <input type="text" id="name" name="name" class="contacto__input form-control"
+                                        required />
+                                </div>
+                                <div class="contacto__form-group mb-3">
+                                    <label for="email" class="contacto__label">Correo Electrónico *</label>
+                                    <input type="email" id="email" name="email" class="contacto__input form-control"
+                                        required />
+                                </div>
+                                <div class="contacto__form-group mb-3">
+                                    <label for="message" class="contacto__label">Mensaje *</label>
+                                    <textarea id="message" name="message" class="contacto__textarea form-control"
+                                        rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="contacto__button btn btn-primary w-100">
+                                    Enviar
+                                </button>
+                            </form>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                        <form action="#" method="POST" class="subscription__form">
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Nombre</label>
-                                <input type="text" id="name" name="name" class="form-control"
-                                    placeholder="Ingresá tu nombre" required>
+
+        <!-- BLOG SECTION -->
+        <section class="blog">
+            <div class="container d-flex flex-column gap-3">
+                <h2 class="blog__title text-center fs-4 fw-bold">Nuestro Blog</h2>
+                <div class="blog__list row">
+                    <!-- Blog 1 -->
+                    <article class="blog__post col-12 col-md-6 col-lg-4">
+                        <img class="blog__image" src="../assets/images/producto.jpg" alt="Café Cofi">
+                        <h3 class="blog__post-title">Cómo Elegir la Molienda Perfecta para tu Café</h3>
+                        <p class="blog__description">
+                            Aprende a elegir la molienda adecuada según tu método de preparación para disfrutar del
+                            mejor sabor en cada
+                            taza.
+                        </p>
+                        <div class="blog__author">
+                            <img class="blog__author-image" src="../assets/images/banner.jpg" alt="Juan Perez"
+                                width="57" height="57">
+                            <div class="blog__author-info">
+                                <h4 class="blog__author-name">Juan Perez</h4>
+                                <p class="blog__author-role">Fundador de Cofi. y Experto en Café de Especialidad</p>
                             </div>
-
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" id="email" name="email" class="form-control"
-                                    placeholder="Ingresá tu correo electrónico" required>
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="phone" class="form-label">Teléfono</label>
-                                <input type="tel" id="phone" name="phone" class="form-control"
-                                    placeholder="Ingresá tu número de teléfono" required>
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="password" class="form-label">Contraseña</label>
-                                <input type="password" id="password" name="password" class="form-control"
-                                    placeholder="Ingresá tu contraseña" required>
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="confirm-password" class="form-label">Repetir contraseña</label>
-                                <input type="password" id="confirm-password" name="confirm-password"
-                                    class="form-control" placeholder="Repetí tu contraseña" required>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary w-100">Enviar</button>
-                        </form>
+                        </div>
                     </article>
 
+                    <!-- Blog 2 -->
+                    <article class="blog__post col-12 col-md-6 col-lg-4">
+                        <img class="blog__image" src="../assets/images/producto.jpg" alt="Cafetera ideal">
+                        <h3 class="blog__post-title">Guía Básica: ¿Cómo Elegir la Cafetera Perfecta para Principiantes?
+                        </h3>
+                        <p class="blog__description">
+                            Descubre qué cafetera es ideal para ti, conociendo las diferencias y eligiendo la que se
+                            adapte a tus gustos.
+                        </p>
+                        <div class="blog__author">
+                            <img class="blog__author-image" src="../assets/images/banner.jpg" alt="María González"
+                                width="57" height="57">
+                            <div class="blog__author-info">
+                                <h4 class="blog__author-name">María González</h4>
+                                <p class="blog__author-role">Consultora en Preparación de Café y Barista Certificada</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog 3 -->
+                    <article class="blog__post col-12 col-md-6 col-lg-4">
+                        <img class="blog__image" src="../assets/images/producto.jpg" alt="Café de Especialidad">
+                        <h3 class="blog__post-title">¿Qué Es el Café de Especialidad y Por Qué Deberías Probarlo?</h3>
+                        <p class="blog__description">
+                            Conoce qué hace especial al café de especialidad y por qué es la mejor opción para una
+                            experiencia única.
+                        </p>
+                        <div class="blog__author">
+                            <img class="blog__author-image" src="../assets/images/banner.jpg" alt="Carlos Rodríguez"
+                                width="57" height="57">
+                            <div class="blog__author-info">
+                                <h4 class="blog__author-name">Carlos Rodríguez</h4>
+                                <p class="blog__author-role">Tostador Profesional y Educador de Café</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAYORISTAS -->
+        <section class="mayoristas-banner">
+            <div class="container">
+                <div class="row justify-content-between gap-5 gap-lg-0">
+                    <div class="col-12 col-lg-6">
+                        <div class="mayoristas-banner__content">
+                            <h2 class="mayoristas-banner__title">¿Tenés un local y querés vender nuestro Café?</h2>
+                            <h3 class="mayoristas-banner__subtitle">¡Ofrecé el mejor café de especialidad a tus
+                                clientes!</h3>
+                            <p class="mayoristas-banner__description">Si tenés un café, restaurante o local, y querés
+                                ofrecer el delicioso sabor de nuestros cafés de especialidad, ¡estamos para ayudarte!
+                            </p>
+                            <a href="#" class="mayoristas-banner__cta">MAYORISTAS →</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="mayoristas-banner__image-wrapper">
+                            <img src="../assets/images/producto.jpg" alt="Bolsa de café de especialidad"
+                                class="mayoristas-banner__image" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- INSTAGRAM REEL -->
+        <section class="instagram-reel" aria-label="Reel de publicaciones de Instagram">
+            <div class="container-fluid d-flex flex-column gap-3 p-0">
+                <h2 class="instagram-reel__title">¡Seguinos en Instagram!</h2>
+                <div class="row row-cols-2 row-cols-lg-5 g-0 instagram-reel__grid">
+                    <div class="col instagram-reel__item"><img src="../assets/images/post-ig.png"
+                            alt="Publicación de Instagram" class="instagram-reel__image" /></div>
+                    <div class="col instagram-reel__item"><img src="../assets/images/post-ig.png"
+                            alt="Publicación de Instagram" class="instagram-reel__image" /></div>
+                    <div class="col instagram-reel__item"><img src="../assets/images/post-ig.png"
+                            alt="Publicación de Instagram" class="instagram-reel__image" /></div>
+                    <div class="col instagram-reel__item"><img src="../assets/images/post-ig.png"
+                            alt="Publicación de Instagram" class="instagram-reel__image" /></div>
+                    <div class="col instagram-reel__item"><img src="../assets/images/post-ig.png"
+                            alt="Publicación de Instagram" class="instagram-reel__image" /></div>
+                    <div class="col instagram-reel__item"><img src="../assets/images/post-ig.png"
+                            alt="Publicación de Instagram" class="instagram-reel__image" /></div>
+                    <div class="col instagram-reel__item"><img src="../assets/images/post-ig.png"
+                            alt="Publicación de Instagram" class="instagram-reel__image" /></div>
+                    <div class="col instagram-reel__item"><img src="../assets/images/post-ig.png"
+                            alt="Publicación de Instagram" class="instagram-reel__image" /></div>
+                    <div class="col instagram-reel__item"><img src="../assets/images/post-ig.png"
+                            alt="Publicación de Instagram" class="instagram-reel__image" /></div>
+                    <div class="col instagram-reel__item"><img src="../assets/images/post-ig.png"
+                            alt="Publicación de Instagram" class="instagram-reel__image" /></div>
+                    <div class="col instagram-reel__item"><img src="../assets/images/post-ig.png"
+                            alt="Publicación de Instagram" class="instagram-reel__image" /></div>
+                    <div class="col instagram-reel__item"><img src="../assets/images/post-ig.png"
+                            alt="Publicación de Instagram" class="instagram-reel__image" /></div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="top bg-black">
-        <div class="container text-center py-3">
-            <p class="text-white m-0">© Cofi 2025. Todos los derechos reservados. | Desarrollado por @marianocejasdev
-            </p>
+    <!-- FOOTER COMPLETO -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer__main d-none d-lg-block">
+            <div class="container">
+                <div class="footer__grid row row-cols-lg-5">
+                    <div class="footer__col footer__brand col">
+                        <a href="#" class="footer__logo">Cofi.</a>
+                        <p class="footer__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                            sed ante sed massa volutpat hendrerit.</p>
+                    </div>
+                    <nav class="footer__col footer__nav col" aria-label="Menú principal">
+                        <h3 class="footer__title">Menú</h3>
+                        <ul class="footer__list">
+                            <li><a href="../index.html" class="footer__link">Inicio</a></li>
+                            <li><a href="#" class="footer__link">#CofiClub</a></li>
+                            <li><a href="./productos.html" class="footer__link">Productos</a></li>
+                            <li><a href="./mayoristas.html" class="footer__link">Mayoristas</a></li>
+                            <li><a href="./contacto.html" class="footer__link">Contacto</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer__col footer__nav col" aria-label="Cafés">
+                        <h3 class="footer__title">Cafés</h3>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">Café de Especialidad</a></li>
+                            <li><a href="#" class="footer__link">Café en Grano</a></li>
+                            <li><a href="#" class="footer__link">Café Molido</a></li>
+                            <li><a href="#" class="footer__link">Café en Cápsulas</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer__col footer__nav col" aria-label="Cafeteras">
+                        <h3 class="footer__title">Cafeteras</h3>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">Cafetera Espresso</a></li>
+                            <li><a href="#" class="footer__link">Cafetera de Goteo</a></li>
+                            <li><a href="#" class="footer__link">Prensa Francesa</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer__col footer__nav col" aria-label="Molinillos">
+                        <h3 class="footer__title">Molinillos</h3>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">Molinillos Manuales</a></li>
+                            <li><a href="#" class="footer__link">Molinillo de Muelas Manual</a></li>
+                            <li><a href="#" class="footer__link">Molinillo Eléctrico de Cuchillas</a></li>
+                            <li><a href="#" class="footer__link">Molinillo Eléctrico de Muelas</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom bg-black">
+            <div class="container text-center py-3">
+                <p class="footer__credits text-white m-0">© Cofi 2025. Todos los derechos reservados. | Desarrollado por
+                    <a href="#" class="footer__author">@marianocejasdev</a>
+                </p>
+            </div>
         </div>
     </footer>
-    <!-- end of FOOTER -->
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>

@@ -1,34 +1,5 @@
-// _base.scss
-@use '../abstracts/variables';
-
-@font-face {
-    font-family: 'Fraunces';
-    src: url('../assets/fonts/Fraunces/Fraunces.ttf') format('truetype');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url('../assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
-    font-display: swap;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: variables.$font-primary;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-a {
-    text-decoration: none;
-}
-
-body {
-    background-color: variables.$color-background;
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
 }

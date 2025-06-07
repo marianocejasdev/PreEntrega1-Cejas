@@ -1,0 +1,113 @@
+// pages/_mayoristas.scss
+.page-mayoristas {
+    .mayoristas {
+        padding-block: 3rem;
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        &__title {
+            font-family: 'Fraunces';
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        &__subtitle {
+            font-family: 'Fraunces';
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        &__description,
+        &__steps {
+            font-family: 'Fraunces';
+            font-size: 1.25rem;
+            font-weight: 400;
+
+            ol {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+        }
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            input[type="password"] {
+                font-family: 'Poppins';
+                font-size: 1rem;
+                padding: 0.75rem;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                color: #000;
+
+                &::placeholder {
+                    color: #999;
+                }
+            }
+
+            button[type="submit"] {
+                font-family: 'Poppins';
+                font-size: 1rem;
+                font-weight: 500;
+                background-color: #000;
+                color: #fff;
+                padding: 0.75rem;
+                border-radius: 10px;
+                border: none;
+                transition: background-color 0.3s ease;
+
+                &:hover {}
+            }
+        }
+    }
+
+    // FAQ específico para la página mayoristas
+    .faq {
+        &__title {
+            font-family: 'Fraunces';
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .accordion-button {
+            font-family: 'Fraunces';
+            font-weight: 600;
+            font-size: 1rem;
+            color: #000;
+            background-color: transparent; // quita el celeste de Bootstrap
+            box-shadow: none;
+
+            &:focus {
+                box-shadow: none;
+            }
+
+            &::after {
+                filter: invert(0%);
+            }
+        }
+
+        .accordion-body {
+            font-family: 'Poppins';
+            font-size: 1rem;
+            color: #000;
+        }
+
+        &__contact {
+            p {
+                font-family: 'Poppins';
+                font-size: 1rem;
+            }
+        }
+    }
+}

@@ -2,59 +2,46 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mayoristas - Cofi</title>
-    <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body class="d-flex flex-column gap-5">
 
     <!-- HEADER -->
     <header>
-
         <!-- TOP -->
         <div class="top bg-black">
             <div class="container text-center py-3">
                 <p class="text-white m-0">10% OFF TRANSFERENCIA | ENVÍOS A TODO EL PAÍS</p>
             </div>
         </div>
-        <!-- end of TOP -->
 
         <!-- NAV -->
         <nav class="navbar navbar-expand-lg py-4">
             <div class="container">
                 <a class="navbar-brand text-black fs-2 fw-bolder" href="../index.html">Cofi.</a>
-
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCofi"
                     aria-controls="navbarCofi" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarCofi">
                     <ul class="navbar-nav gap-4 mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link text-black fw-medium" href="../index.html">Inicio</a>
+                        <li class="nav-item"><a class="nav-link text-black fw-medium" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-black fw-bolder active" href="./suscripcion.html"
-                                aria-current="page">#CofiClub</a>
+                        <li class="nav-item"><a class="nav-link text-black fw-bolder"
+                                href="./suscripcion.html">#CofiClub</a></li>
+                        <li class="nav-item"><a class="nav-link text-black fw-medium"
+                                href="./productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link text-black fw-medium active" href="#">Mayoristas</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-black fw-medium" href="./productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-black fw-medium" href="./mayoristas.html">Mayoristas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-black fw-medium" href="./contacto.html">Contacto</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link text-black fw-medium"
+                                href="./contacto.html">Contacto</a></li>
                     </ul>
-
                     <div class="d-flex align-items-center gap-4">
                         <a href="#"><img src="../assets/icons/search.svg" alt="Buscar" height="24"></a>
                         <a href="#"><img src="../assets/icons/user.svg" alt="Usuario" height="24"></a>
@@ -64,215 +51,365 @@
                 </div>
             </div>
         </nav>
-        <!-- end of NAV -->
 
-        <!-- SUSCRIPTION BANNER -->
+        <!-- BANNER -->
         <section class="subscription-banner container-fluid">
             <div class="container text-white">
-                <h3 class="subscription-banner__text fw-semibold fs-2 fs-md-4">¡No te vuelvas a quedar sin café!</h3>
-                <h3 class=" subscription-banner__text fw-normal">Sumate a
-                    <span class="fw-bold">#CofiClub</span>
-                </h3>
+                <h2 class="subscription-banner__text fw-semibold fs-2 fs-md-4">¡No te vuelvas a quedar sin café!</h2>
+                <h3 class="subscription-banner__text fw-normal">Sumate a <span class="fw-bold">#CofiClub</span></h3>
             </div>
         </section>
-        <!-- end of SUSCRIPTION BANNER -->
-
     </header>
-    <!-- end of HEADER -->
 
-    <main class="main">
-        <section class="faq">
+    <!-- MAIN -->
+    <main role="main" id="main-content" class="page-mayoristas">
+        <!-- FORM SECTION -->
+        <section class="mayoristas">
             <div class="container">
-                <h1 class="faq__title fs-4 fw-bold mb-4 text-center">Preguntas Frecuentes</h1>
-
-                <div class="accordion" id="faqAccordion">
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="faqOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                ¿Cómo me suscribo a #CofiClub?
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Para suscribirte a #CofiClub, simplemente haz clic en el botón "Suscríbete" en nuestra
-                                página de suscripción, elige el plan que más te guste y completa tu información de pago.
-                                ¡Así de fácil!
+                <div class="row justify-content-between">
+                    <div class="col-md-6">
+                        <div class="mayoristas__content">
+                            <h1 class="mayoristas__title">¿Tenés un local y querés vender nuestro Café?</h1>
+                            <h3 class="mayoristas__subtitle">¡Ofrecé el mejor café de especialidad a tus clientes!</h3>
+                            <p class="mayoristas__description">
+                                Si tenés un café, restaurante o local, y querés ofrecer el delicioso
+                                sabor de nuestros cafés de especialidad, ¡estamos para ayudarte!
+                            </p>
+                            <div class="mayoristas__steps">
+                                <p><strong>Crea tu cuenta mayorista en 3 simples pasos</strong></p>
+                                <ol>
+                                    <li>Completá tus datos y creá tu cuenta mayorista</li>
+                                    <li>Iniciá sesión en nuestra página web.</li>
+                                    <li>¡Listo! Ya tendrás acceso a tu cuenta de distribuidor, con beneficios y precios
+                                        exclusivos para compras mayoristas.</li>
+                                </ol>
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-6">
+                        <form class="mayoristas__form d-flex flex-column gap-3">
+                            <label for="nombre">Nombre Completo *</label>
+                            <input type="text" id="nombre" class="form-control" placeholder="Nombre Completo"
+                                required />
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="faqTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                ¿Puedo elegir el tipo de café que recibo?
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Sí, ofrecemos diferentes tipos de café según tus preferencias. Puedes elegir entre grano
-                                entero, molido para cafetera italiana, cafetera francesa, filtrado y espresso.
-                            </div>
-                        </div>
+                            <label for="email">Correo Electrónico *</label>
+                            <input type="email" id="email" class="form-control" placeholder="Correo Electrónico"
+                                required />
+
+                            <label for="telefono">Teléfono de Contacto *</label>
+                            <input type="tel" id="telefono" class="form-control" placeholder="Teléfono de Contacto"
+                                required />
+
+                            <label for="password">Contraseña *</label>
+                            <input type="password" id="password" class="form-control" placeholder="Contraseña"
+                                required />
+
+                            <label for="repetir-password">Repetir Contraseña *</label>
+                            <input type="password" id="repetir-password" class="form-control"
+                                placeholder="Repetir Contraseña" required />
+
+                            <button type="submit" class="btn btn-primary">Crear Cuenta</button>
+                        </form>
+
                     </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="faqThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                ¿Cada cuánto recibo mi café?
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Dependiendo del plan que elijas, puedes recibir tu café de forma mensual o anual. ¡Tú
-                                decides la frecuencia de tu suscripción!
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="faqFour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                ¿Puedo cancelar o modificar mi suscripción?
-                            </button>
-                        </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Sí, puedes cancelar o modificar tu suscripción en cualquier momento desde tu cuenta. No
-                                hay penalización por cancelación y puedes cambiar tu plan según tus necesidades.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="faqFive">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                ¿Puedo elegir la cantidad de café que recibo cada mes?
-                            </button>
-                        </h2>
-                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="faqFive"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Sí, puedes elegir entre diferentes cantidades: 250gr, 500gr, 1000gr, y 2000gr. Escoge la
-                                cantidad que se ajuste a tus necesidades y nosotros nos encargamos del resto.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="faqSix">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                ¿Qué pasa si no estoy en casa cuando llegue mi pedido?
-                            </button>
-                        </h2>
-                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="faqSix"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Si no estás en casa, el servicio de entrega intentará realizar una nueva entrega en un
-                                horario conveniente o te dejarán una notificación para que puedas recoger tu paquete en
-                                un punto de entrega cercano.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="faqSeven">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                ¿Puedo cambiar mi plan después de suscribirme?
-                            </button>
-                        </h2>
-                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="faqSeven"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Sí, puedes cambiar tu plan de suscripción en cualquier momento. Accede a tu cuenta y
-                                selecciona el plan que más se ajuste a tus necesidades. ¡Nos aseguramos de que siempre
-                                estés satisfecho!
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="faqEight">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                ¿Cuánto cuesta el envío?
-                            </button>
-                        </h2>
-                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="faqEight"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                El costo del envío varía según la ubicación. Sin embargo, ofrecemos envíos gratuitos en
-                                ciertas promociones. Puedes consultar los detalles de envío en nuestra página de
-                                checkout antes de completar la compra.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="faqNine">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                                ¿Qué hago si tengo algún problema con mi pedido?
-                            </button>
-                        </h2>
-                        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="faqNine"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Si tienes algún problema con tu pedido, por favor contacta con nuestro servicio de
-                                atención al cliente. Estamos disponibles para ayudarte con cualquier inconveniente y
-                                asegurarnos de que recibas tu café sin problemas.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="faqTen">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                                ¿Puedo regalar una suscripción a #CofiClub?
-                            </button>
-                        </h2>
-                        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="faqTen"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Sí, puedes regalar una suscripción a #CofiClub. Visita nuestra página de regalos y
-                                selecciona el plan de suscripción que desees regalar. ¡El regalo perfecto para los
-                                amantes del café!
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
+
+        <!-- PREGUNTAS FRECUENTES -->
+        <section class="faq">
+            <div class="container">
+                <h2 class="faq__title text-center fs-4 fw-bold mb-4">Preguntas Frecuentes</h2>
+
+                <div class="accordion" id="faqAccordion">
+                    <!-- Pregunta 1 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="faqOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                ¿Cuáles son los requisitos para ser mayorista de Cofi?
+                            </button>
+                        </h3>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Debés tener un comercio habilitado y contar con una cuenta mayorista creada en nuestro
+                                sitio para acceder a los precios especiales y beneficios.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 2 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="faqTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                ¿Qué beneficios tengo como mayorista?
+                            </button>
+                        </h3>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Acceso a precios exclusivos, promociones especiales y prioridad en la disponibilidad de
+                                nuestros productos.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 3 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="faqThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                ¿Cuál es el costo de envío?
+                            </button>
+                        </h3>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                El costo de envío se calcula según la ubicación y el volumen del pedido. Ofrecemos
+                                envíos gratuitos en pedidos mayores a ciertos montos.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 4 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="faqFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                ¿Cuáles son las formas de pago?
+                            </button>
+                        </h3>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Aceptamos transferencias bancarias, pagos con tarjeta y otros medios electrónicos para
+                                mayor comodidad.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 5 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="faqFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                ¿Emiten factura A?
+                            </button>
+                        </h3>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="faqFive"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Sí, emitimos factura A para que puedas registrar tu compra de forma correcta en tu
+                                comercio.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 6 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="faqSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                ¿El café viene en grano o molido?
+                            </button>
+                        </h3>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="faqSix"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Ofrecemos ambas opciones: café en grano o molido según las preferencias y necesidades de
+                                tu negocio.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 7 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="faqSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                ¿Ofrecen asesoramiento para elegir los productos?
+                            </button>
+                        </h3>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="faqSeven"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Sí, nuestro equipo está disponible para ayudarte a elegir los productos más adecuados
+                                para tu negocio y maximizar tus ventas.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq__contact text-center mt-4">
+                    <p class="fw-semibold">¿Tenés más preguntas o dudas?<br>
+                        Escribinos a cualquiera de nuestros canales de comunicación, y con gusto te ayudamos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOG SECTION -->
+        <section class="blog">
+            <div class="container d-flex flex-column gap-3">
+                <h2 class="blog__title text-center fs-4 fw-bold">Nuestro Blog</h2>
+                <div class="blog__list row">
+                    <!-- Blog 1 -->
+                    <article class="blog__post col-12 col-md-6 col-lg-4">
+                        <img class="blog__image" src="../assets/images/producto.jpg" alt="Café Cofi">
+                        <h3 class="blog__post-title">Cómo Elegir la Molienda Perfecta para tu Café</h3>
+                        <p class="blog__description">
+                            Aprende a elegir la molienda adecuada según tu método de preparación para disfrutar del
+                            mejor sabor en cada
+                            taza.
+                        </p>
+                        <div class="blog__author">
+                            <img class="blog__author-image" src="../assets/images/banner.jpg" alt="Juan Perez"
+                                width="57" height="57">
+                            <div class="blog__author-info">
+                                <h4 class="blog__author-name">Juan Perez</h4>
+                                <p class="blog__author-role">Fundador de Cofi. y Experto en Café de Especialidad</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog 2 -->
+                    <article class="blog__post col-12 col-md-6 col-lg-4">
+                        <img class="blog__image" src="../assets/images/producto.jpg" alt="Cafetera ideal">
+                        <h3 class="blog__post-title">Guía Básica: ¿Cómo Elegir la Cafetera Perfecta para Principiantes?
+                        </h3>
+                        <p class="blog__description">
+                            Descubre qué cafetera es ideal para ti, conociendo las diferencias y eligiendo la que se
+                            adapte a tus gustos.
+                        </p>
+                        <div class="blog__author">
+                            <img class="blog__author-image" src="../assets/images/banner.jpg" alt="María González"
+                                width="57" height="57">
+                            <div class="blog__author-info">
+                                <h4 class="blog__author-name">María González</h4>
+                                <p class="blog__author-role">Consultora en Preparación de Café y Barista Certificada</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog 3 -->
+                    <article class="blog__post col-12 col-md-6 col-lg-4">
+                        <img class="blog__image" src="../assets/images/producto.jpg" alt="Café de Especialidad">
+                        <h3 class="blog__post-title">¿Qué Es el Café de Especialidad y Por Qué Deberías Probarlo?</h3>
+                        <p class="blog__description">
+                            Conoce qué hace especial al café de especialidad y por qué es la mejor opción para una
+                            experiencia única.
+                        </p>
+                        <div class="blog__author">
+                            <img class="blog__author-image" src="../assets/images/banner.jpg" alt="Carlos Rodríguez"
+                                width="57" height="57">
+                            <div class="blog__author-info">
+                                <h4 class="blog__author-name">Carlos Rodríguez</h4>
+                                <p class="blog__author-role">Tostador Profesional y Educador de Café</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- INSTAGRAM REEL -->
+        <section class="instagram-reel" aria-label="Reel de publicaciones de Instagram">
+            <div class="container-fluid d-flex flex-column gap-3 p-0">
+                <h2 class="instagram-reel__title">¡Seguinos en Instagram!</h2>
+                <div class="row row-cols-2 row-cols-lg-5 g-0 instagram-reel__grid">
+                    <div class="col instagram-reel__item"><img src="../assets/images/post-ig.png"
+                            alt="Publicación de Instagram" class="instagram-reel__image" /></div>
+                    <div class="col instagram-reel__item"><img src="../assets/images/post-ig.png"
+                            alt="Publicación de Instagram" class="instagram-reel__image" /></div>
+                    <div class="col instagram-reel__item"><img src="../assets/images/post-ig.png"
+                            alt="Publicación de Instagram" class="instagram-reel__image" /></div>
+                    <div class="col instagram-reel__item"><img src="../assets/images/post-ig.png"
+                            alt="Publicación de Instagram" class="instagram-reel__image" /></div>
+                    <div class="col instagram-reel__item"><img src="../assets/images/post-ig.png"
+                            alt="Publicación de Instagram" class="instagram-reel__image" /></div>
+                    <div class="col instagram-reel__item"><img src="../assets/images/post-ig.png"
+                            alt="Publicación de Instagram" class="instagram-reel__image" /></div>
+                    <div class="col instagram-reel__item"><img src="../assets/images/post-ig.png"
+                            alt="Publicación de Instagram" class="instagram-reel__image" /></div>
+                    <div class="col instagram-reel__item"><img src="../assets/images/post-ig.png"
+                            alt="Publicación de Instagram" class="instagram-reel__image" /></div>
+                    <div class="col instagram-reel__item"><img src="../assets/images/post-ig.png"
+                            alt="Publicación de Instagram" class="instagram-reel__image" /></div>
+                    <div class="col instagram-reel__item"><img src="../assets/images/post-ig.png"
+                            alt="Publicación de Instagram" class="instagram-reel__image" /></div>
+                    <div class="col instagram-reel__item"><img src="../assets/images/post-ig.png"
+                            alt="Publicación de Instagram" class="instagram-reel__image" /></div>
+                    <div class="col instagram-reel__item"><img src="../assets/images/post-ig.png"
+                            alt="Publicación de Instagram" class="instagram-reel__image" /></div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-
-    <!-- FOOTER -->
-    <footer class="top bg-black">
-        <div class="container text-center py-3">
-            <p class="text-white m-0">© Cofi 2025. Todos los derechos reservados. | Desarrollado por @marianocejasdev
-            </p>
+    <!-- FOOTER COMPLETO -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer__main d-none d-lg-block">
+            <div class="container">
+                <div class="footer__grid row row-cols-lg-5">
+                    <div class="footer__col footer__brand col">
+                        <a href="#" class="footer__logo">Cofi.</a>
+                        <p class="footer__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                            sed ante sed massa volutpat hendrerit.</p>
+                    </div>
+                    <nav class="footer__col footer__nav col" aria-label="Menú principal">
+                        <h3 class="footer__title">Menú</h3>
+                        <ul class="footer__list">
+                            <li><a href="../index.html" class="footer__link">Inicio</a></li>
+                            <li><a href="#" class="footer__link">#CofiClub</a></li>
+                            <li><a href="./productos.html" class="footer__link">Productos</a></li>
+                            <li><a href="./mayoristas.html" class="footer__link">Mayoristas</a></li>
+                            <li><a href="./contacto.html" class="footer__link">Contacto</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer__col footer__nav col" aria-label="Cafés">
+                        <h3 class="footer__title">Cafés</h3>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">Café de Especialidad</a></li>
+                            <li><a href="#" class="footer__link">Café en Grano</a></li>
+                            <li><a href="#" class="footer__link">Café Molido</a></li>
+                            <li><a href="#" class="footer__link">Café en Cápsulas</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer__col footer__nav col" aria-label="Cafeteras">
+                        <h3 class="footer__title">Cafeteras</h3>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">Cafetera Espresso</a></li>
+                            <li><a href="#" class="footer__link">Cafetera de Goteo</a></li>
+                            <li><a href="#" class="footer__link">Prensa Francesa</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer__col footer__nav col" aria-label="Molinillos">
+                        <h3 class="footer__title">Molinillos</h3>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">Molinillos Manuales</a></li>
+                            <li><a href="#" class="footer__link">Molinillo de Muelas Manual</a></li>
+                            <li><a href="#" class="footer__link">Molinillo Eléctrico de Cuchillas</a></li>
+                            <li><a href="#" class="footer__link">Molinillo Eléctrico de Muelas</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom bg-black">
+            <div class="container text-center py-3">
+                <p class="footer__credits text-white m-0">© Cofi 2025. Todos los derechos reservados. | Desarrollado por
+                    <a href="#" class="footer__author">@marianocejasdev</a>
+                </p>
+            </div>
         </div>
     </footer>
-    <!-- end of FOOTER -->
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>

@@ -1,0 +1,33 @@
+// Abstracts (variables, mixins, fonts, functions)
+@use 'abstracts/fonts';
+// @use 'themes/colors';
+
+// Base (reset, base, typography)
+@use 'base/reset';
+@use 'base/base';
+@use 'base/typography';
+
+// Layout (estructura principal)
+@use 'layout/header';
+// @use 'layout/navbar';
+@use 'layout/main';
+// @use 'layout/sidebar';
+
+// Components (componentes reutilizables)
+// @use 'components/buttons';
+@use 'components/products';
+@use 'components/subscription-banner';
+@use 'components/blog';
+@use 'components/mayoristas-banner';
+@use 'components/instagram';
+@use 'components/footer';
+@use 'components/faq';
+
+// Pages (estilos específicos por página)
+@use 'pages/mayoristas';
+@use 'pages/suscripcion';
+@use 'pages/productos';
+@use 'pages/contacto';
+
+// Vendors (librerías externas)
+// @use 'vendors/bootstrap';

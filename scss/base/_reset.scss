@@ -1,11 +1,7 @@
-// base/_reset.scss
-@use '../abstracts/variables';
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: variables.$font-primary;
 }
 
 img {
@@ -15,8 +11,4 @@ img {
 
 a {
     text-decoration: none;
-}
-
-body {
-    background-color: variables.$color-background;
 }

@@ -1,0 +1,65 @@
+.footer {
+    &__logo {
+        font-family: "Fraunces";
+        font-size: 3rem;
+        color: #000;
+        font-weight: 900;
+    }
+
+    &__description {
+        font-family: "Poppins";
+        font-size: 1rem;
+        font-weight: 400;
+        color: #000;
+    }
+
+    &__title {
+        color: #000;
+        font-family: "Poppins";
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0;
+    }
+
+    &__link {
+        color: #000;
+        font-family: "Poppins";
+        font-size: 1rem;
+        font-weight: 400;
+
+        &:hover {
+            font-weight: 600;
+        }
+    }
+
+    &__credits {
+        font-family: "Poppins";
+        font-size: 0.85rem;
+        font-weight: 400;
+        color: #fff;
+    }
+
+    &__author {
+        color: #fff;
+        font-family: "Poppins";
+        font-size: 0.85rem;
+        font-weight: 400;
+
+        &:hover {
+            font-weight: 600;
+        }
+    }
+}

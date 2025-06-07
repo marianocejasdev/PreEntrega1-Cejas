@@ -1,18 +1,35 @@
 @font-face {
   font-family: "Fraunces";
   src: url("../assets/fonts/Fraunces/Fraunces.ttf") format("truetype");
+  font-weight: 400 700 900;
+  font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Poppins";
   src: url("../assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/Poppins-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
   font-display: swap;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Fraunces";
 }
 
 img {
@@ -24,11 +41,26 @@ a {
   text-decoration: none;
 }
 
-body {
-  background-color: #ECE2D6;
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
 }
 
-.top p {
+body {
+  font-family: "Fraunces";
+  background-color: #ECE2D6;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.top p,
+.nav-link.fw-medium {
+  font-family: "Poppins";
+}
+
+.header__top p {
   font-family: "Poppins";
 }
 
@@ -49,7 +81,7 @@ body {
 
 .banner-video {
   padding: 0;
-  width: 100vw;
+  max-width: 100vw;
   height: 360px;
   overflow: hidden;
 }
@@ -57,6 +89,12 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
 }
 
 .product {
@@ -93,6 +131,54 @@ body {
   margin-bottom: 0;
 }
 
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.product__image {
+  border-radius: 10px;
+}
+.product__name {
+  font-family: "Fraunces";
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+.product__price {
+  font-family: "Fraunces";
+  font-size: 18px;
+  color: #000;
+}
+.product__button {
+  background-color: #000;
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 1rem;
+  border: none;
+  border-radius: 999px;
+  padding: 0.5rem 2rem;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-color: transparent;
+}
+.product-list::-webkit-scrollbar {
+  display: none;
+}
+
+.highlighted-products__link {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .subscription-banner {
   padding-block: 2rem;
   background-image: url("../assets/images/banner.jpg");
@@ -103,12 +189,526 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 16px;
 }
 .subscription-banner__text {
   font-family: "Fraunces";
   font-size: 2rem;
+}
+
+.blog__list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-color: transparent;
+}
+.blog__list::-webkit-scrollbar {
+  display: none;
+}
+.blog__title {
+  font-family: "Fraunces";
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.blog__post {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5rem;
+}
+.blog__image {
+  height: 282px;
+  border-radius: 10px;
+  align-self: stretch;
+  object-fit: cover;
+}
+.blog__post-title {
+  font-family: "Fraunces";
+  font-size: 20px;
+  font-weight: 600;
+}
+.blog__description {
+  font-family: "Fraunces";
+  font-size: 20px;
+  font-weight: 400;
+}
+.blog__author {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+}
+.blog__author-image {
+  aspect-ratio: 1/1;
+  width: 57px;
+  height: 57px;
+  border-radius: 999px;
+}
+.blog__author-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+}
+.blog__author-name {
+  font-family: "Fraunces";
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+.blog__author-role {
+  font-family: "Fraunces";
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.mayoristas-banner {
+  background-color: #E1D1BA;
+  padding-block: 3rem;
+}
+.mayoristas-banner__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+}
+.mayoristas-banner__title {
+  font-family: "Fraunces";
+  font-size: 2rem;
+  font-weight: 700;
+}
+.mayoristas-banner__subtitle {
+  font-family: "Fraunces";
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.mayoristas-banner__description {
+  font-family: "Fraunces";
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.mayoristas-banner__cta {
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+}
+.mayoristas-banner__image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mayoristas-banner__image {
+  max-width: 400px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+}
+
+.instagram-reel__title {
+  font-family: "Fraunces";
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.instagram-reel .row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-color: transparent;
+}
+.instagram-reel .row::-webkit-scrollbar {
+  color: transparent;
+  display: none;
+}
+.instagram-reel__image {
+  width: 100%;
+  display: block;
+  max-height: 320px;
+  aspect-ratio: 1/2;
+  object-fit: cover;
+}
+
+.footer__logo {
+  font-family: "Fraunces";
+  font-size: 3rem;
+  color: #000;
+  font-weight: 900;
+}
+.footer__description {
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+}
+.footer__title {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-weight: 600;
+}
+.footer__col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+}
+.footer__link {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-weight: 400;
+}
+.footer__link:hover {
+  font-weight: 600;
+}
+.footer__credits {
+  font-family: "Poppins";
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #fff;
+}
+.footer__author {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+.footer__author:hover {
+  font-weight: 600;
+}
+
+.faq__title {
+  font-family: "Fraunces";
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #000;
+}
+.faq .accordion {
+  background-color: transparent;
+}
+.faq .accordion .accordion-item {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.faq .accordion .accordion-item .accordion-header button {
+  font-family: "Fraunces";
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  background-color: transparent;
+  border: none;
+  padding: 1rem;
+  text-align: start;
+}
+.faq .accordion .accordion-item .accordion-header button:hover, .faq .accordion .accordion-item .accordion-header button:focus {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.faq .accordion .accordion-item .accordion-body {
+  font-family: "Poppins";
+  font-size: 1rem;
+  color: #000;
+  background-color: transparent;
+  padding: 1rem;
+}
+.faq__contact p {
+  font-family: "Poppins";
+  font-size: 1rem;
+  text-align: center;
+  color: #000;
+}
+
+.page-mayoristas .mayoristas {
+  padding-block: 3rem;
+}
+.page-mayoristas .mayoristas__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.page-mayoristas .mayoristas__title {
+  font-family: "Fraunces";
+  font-size: 2rem;
+  font-weight: 700;
+}
+.page-mayoristas .mayoristas__subtitle {
+  font-family: "Fraunces";
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.page-mayoristas .mayoristas__description, .page-mayoristas .mayoristas__steps {
+  font-family: "Fraunces";
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.page-mayoristas .mayoristas__description ol, .page-mayoristas .mayoristas__steps ol {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.page-mayoristas .mayoristas__form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.page-mayoristas .mayoristas__form input[type=text],
+.page-mayoristas .mayoristas__form input[type=email],
+.page-mayoristas .mayoristas__form input[type=tel],
+.page-mayoristas .mayoristas__form input[type=password] {
+  font-family: "Poppins";
+  font-size: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: #000;
+}
+.page-mayoristas .mayoristas__form input[type=text]::placeholder,
+.page-mayoristas .mayoristas__form input[type=email]::placeholder,
+.page-mayoristas .mayoristas__form input[type=tel]::placeholder,
+.page-mayoristas .mayoristas__form input[type=password]::placeholder {
+  color: #999;
+}
+.page-mayoristas .mayoristas__form button[type=submit] {
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #000;
+  color: #fff;
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+.page-mayoristas .faq__title {
+  font-family: "Fraunces";
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.page-mayoristas .faq .accordion-button {
+  font-family: "Fraunces";
+  font-weight: 600;
+  font-size: 1rem;
+  color: #000;
+  background-color: transparent;
+  box-shadow: none;
+}
+.page-mayoristas .faq .accordion-button:focus {
+  box-shadow: none;
+}
+.page-mayoristas .faq .accordion-button::after {
+  filter: invert(0%);
+}
+.page-mayoristas .faq .accordion-body {
+  font-family: "Poppins";
+  font-size: 1rem;
+  color: #000;
+}
+.page-mayoristas .faq__contact p {
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+.subscription-section__title {
+  font-family: "Fraunces";
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+}
+.subscription-section__product {
+  max-width: 450px;
+  max-height: 580px;
+  object-fit: cover;
+}
+.subscription-section__product img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.subscription {
+  display: flex;
+  text-align: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+}
+.subscription p {
+  color: #000;
+  font-family: "Fraunces";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+.subscription__stars img {
+  filter: invert(63%) sepia(68%) saturate(742%) hue-rotate(359deg) brightness(100%) contrast(99%);
+}
+.subscription__price {
+  font-family: "Fraunces";
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.subscription__options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.subscription__options .subscription__option {
+  border-radius: 10px;
+  background: #fff;
+  color: #000;
+  font-family: "Fraunces";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  transition: background 0.3s, color 0.3s;
+}
+.subscription__options .subscription__option:hover {
+  background: #F9BA72;
+  color: #000;
+}
+.subscription__options .subscription__option:first-child {
+  background: #F9BA72;
+  color: #000;
+}
+.subscription__button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 48px;
+  border-radius: 10px;
+  background: #000;
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (min-width: 992px) {
+  .subscription {
+    max-width: 450px;
+  }
+  .subscription-section__product {
+    max-width: 450px;
+    max-height: 580px;
+  }
+}
+.producto-aside h2 {
+  font-family: "Fraunces";
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+}
+.producto-aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.producto-aside ul li {
+  margin-bottom: 0.5rem;
+}
+.producto-aside ul li span {
+  display: block;
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0.25rem;
+}
+.producto-aside ul li ul {
+  margin-left: 1rem;
+  padding-left: 0;
+}
+.producto-aside ul li ul li {
+  margin-bottom: 0.25rem;
+}
+.producto-aside ul li ul li a {
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+}
+.producto-aside ul li ul li a:hover {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.contacto__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contacto__title {
+  font-family: "Fraunces";
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #000;
+}
+.contacto__paragraph {
+  font-family: "Fraunces";
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+}
+.contacto__form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contacto__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contacto__form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.contacto__label {
+  font-family: "Poppins";
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #000;
+}
+.contacto__input, .contacto__textarea {
+  font-family: "Poppins";
+  font-size: 1rem;
+  color: #000;
+}
+.contacto__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 48px;
+  border-radius: 10px;
+  background: #000;
+  color: #FFF;
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.contacto__button:hover {
+  background: black;
 }
 
 /*# sourceMappingURL=style.css.map */

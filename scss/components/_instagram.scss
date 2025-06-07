@@ -1,0 +1,28 @@
+.instagram-reel {
+    &__title {
+        font-family: "Fraunces";
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scrollbar-color: transparent;
+
+        &::-webkit-scrollbar {
+            color: transparent;
+            display: none; // Oculta scrollbar en WebKit
+        }
+    }
+
+    &__image {
+        width: 100%;
+        display: block;
+        max-height: 320px;
+        aspect-ratio: 1/2;
+        object-fit: cover;
+    }
+}

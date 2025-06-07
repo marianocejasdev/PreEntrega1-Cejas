@@ -1,0 +1,59 @@
+// components/_faq.scss
+@use '../abstracts/variables' as vars;
+
+.faq {
+    &__title {
+        font-family: vars.$font-primary;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: vars.$color-black;
+    }
+
+    .accordion {
+        background-color: transparent;
+
+        .accordion-item {
+            background-color: transparent;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+
+            .accordion-header {
+                button {
+                    font-family: vars.$font-primary;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: vars.$color-black;
+                    background-color: transparent;
+                    border: none;
+                    padding: 1rem;
+                    text-align: start;
+
+                    &:hover,
+                    &:focus {
+                        background-color: rgba(0, 0, 0, 0.05);
+                    }
+                }
+            }
+
+            .accordion-body {
+                font-family: vars.$font-secondary;
+                font-size: 1rem;
+                color: vars.$color-black;
+                background-color: transparent;
+                padding: 1rem;
+            }
+        }
+    }
+
+    &__contact {
+        p {
+            font-family: vars.$font-secondary;
+            font-size: 1rem;
+            text-align: center;
+            color: vars.$color-black;
+        }
+    }
+}
